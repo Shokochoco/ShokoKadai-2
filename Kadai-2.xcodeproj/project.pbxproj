@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		736FF31F707358BAC678DA96 /* Pods_Kadai_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA835C84BEF00BEA9E79B5D /* Pods_Kadai_2.framework */; };
 		D80035B2273189FC00AFF3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80035B1273189FC00AFF3DD /* AppDelegate.swift */; };
 		D80035B4273189FC00AFF3DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80035B3273189FC00AFF3DD /* SceneDelegate.swift */; };
 		D80035B6273189FC00AFF3DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80035B5273189FC00AFF3DD /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25C347D2F5D88ED483A6D5D4 /* Pods-Kadai-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai-2.debug.xcconfig"; path = "Target Support Files/Pods-Kadai-2/Pods-Kadai-2.debug.xcconfig"; sourceTree = "<group>"; };
 		D80035AE273189FB00AFF3DD /* Kadai-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kadai-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80035B1273189FC00AFF3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80035B3273189FC00AFF3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		D80035BA27318A0900AFF3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80035BD27318A0900AFF3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80035BF27318A0900AFF3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0EB05A210293E4EE1D0902 /* Pods-Kadai-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai-2.release.xcconfig"; path = "Target Support Files/Pods-Kadai-2/Pods-Kadai-2.release.xcconfig"; sourceTree = "<group>"; };
+		EDA835C84BEF00BEA9E79B5D /* Pods_Kadai_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736FF31F707358BAC678DA96 /* Pods_Kadai_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0830160777B9D1E1CC33166E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDA835C84BEF00BEA9E79B5D /* Pods_Kadai_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C822292A2F6146F4A5B2CC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C347D2F5D88ED483A6D5D4 /* Pods-Kadai-2.debug.xcconfig */,
+				EB0EB05A210293E4EE1D0902 /* Pods-Kadai-2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D80035A5273189FB00AFF3DD = {
 			isa = PBXGroup;
 			children = (
 				D80035B0273189FB00AFF3DD /* Kadai-2 */,
 				D80035AF273189FB00AFF3DD /* Products */,
+				3C822292A2F6146F4A5B2CC5 /* Pods */,
+				0830160777B9D1E1CC33166E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80035C227318A0900AFF3DD /* Build configuration list for PBXNativeTarget "Kadai-2" */;
 			buildPhases = (
+				6FAF46FCF7B0EBB8B78410D0 /* [CP] Check Pods Manifest.lock */,
 				D80035AA273189FB00AFF3DD /* Sources */,
 				D80035AB273189FB00AFF3DD /* Frameworks */,
 				D80035AC273189FB00AFF3DD /* Resources */,
+				D80035C727318BFE00AFF3DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FAF46FCF7B0EBB8B78410D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kadai-2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80035C727318BFE00AFF3DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D80035AA273189FB00AFF3DD /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		D80035C327318A0900AFF3DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C347D2F5D88ED483A6D5D4 /* Pods-Kadai-2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		D80035C427318A0900AFF3DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0EB05A210293E4EE1D0902 /* Pods-Kadai-2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
